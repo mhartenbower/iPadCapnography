@@ -24,6 +24,8 @@
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+//Files checked for ioS 9/Xcode 7 -John
+
 #import "AppDelegate.h"
 
 #import "ScanViewController.h"

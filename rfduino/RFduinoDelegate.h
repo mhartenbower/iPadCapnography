@@ -24,6 +24,8 @@
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+//Updates for Xcode 7/iOS 9
+
 #import <Foundation/Foundation.h>
 
 @protocol RFduinoDelegate <NSObject>

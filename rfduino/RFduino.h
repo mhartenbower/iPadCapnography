@@ -24,6 +24,8 @@
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+//Updates for iOS 9/Xcode 7 Added
+
 #import <Foundation/Foundation.h>
 
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
@@ -55,7 +57,7 @@ extern NSString *customUUID;
 @property(strong, nonatomic) RFduinoManager *rfduinoManager;
 
 @property(strong, nonatomic) NSString *name;
-@property(strong, nonatomic) NSString *UUID;
+// @property(strong, nonatomic) NSString *UUID;
 @property(strong, nonatomic) NSData *advertisementData;
 @property(strong, nonatomic) NSNumber *advertisementRSSI;
 @property(assign, nonatomic) NSInteger advertisementPackets;
