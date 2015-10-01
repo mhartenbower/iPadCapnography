@@ -234,8 +234,9 @@
    
     
     //Define given CO2 Value
-    
-    appData.co2value = dataFloat(data);
+    float co2Value = dataFloat(data);
+    appData.co2value = co2Value;
+    //store co2Value into coredata here
     
     
     NSLog(@"CO2 PPM=%.2f", appData.co2value);
