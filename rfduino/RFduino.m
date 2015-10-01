@@ -24,6 +24,7 @@
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+//Updates for Xcode 7/iOS 9
 #import "RFduino.h"
 
 #import "RFduinoManager.h"
@@ -90,7 +91,7 @@ static void incrementUuid16(CBUUID *uuid, unsigned char amount)
 @synthesize peripheral;
 
 @synthesize name;
-@synthesize UUID;
+//@synthesize UUID;
 @synthesize advertisementData;
 @synthesize advertisementRSSI;
 @synthesize advertisementPackets;
