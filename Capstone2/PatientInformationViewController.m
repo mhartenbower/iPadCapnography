@@ -89,6 +89,10 @@
     NSManagedObjectContext *context =
     [appDelegate managedObjectContext];
     
+    
+    // NSManagedObjectContext* context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]). managedObjectContext;
+    
+    
     NSEntityDescription *entityDesc =
     [NSEntityDescription entityForName:@"Person"
                 inManagedObjectContext:context];

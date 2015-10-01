@@ -32,16 +32,16 @@
 
     //Bug Fix John Not sure if Correct
     
-    /*
+    
     
     NSManagedObjectContext *context =
     [appDelegate managedObjectContext];
      
-     */
+    
     
     //The following line of code is the bugfix. Tell me if its correct.
     
-    NSManagedObjectContext* context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]). managedObjectContext;
+   // NSManagedObjectContext* context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]). managedObjectContext;
     
     //Added Code ends here
     
