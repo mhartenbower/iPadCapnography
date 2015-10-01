@@ -7,6 +7,8 @@
 //
 
 #import "PatientInformationViewController.h"
+#import "AppDelegate.h"
+
 
 @interface PatientInformationViewController ()
 
