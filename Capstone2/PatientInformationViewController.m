@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-     //_co2ValueArray=[[NSMutableArray alloc] init];
+     _co2ValueArray=[[NSMutableArray alloc] init];
 
 }
 

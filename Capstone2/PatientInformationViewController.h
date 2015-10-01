@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <UIKit/UIKit.h>
 #import "AppViewController.h"
-
+#import <CoreData/CoreData.h>
 
 @interface PatientInformationViewController : UIViewController
 {

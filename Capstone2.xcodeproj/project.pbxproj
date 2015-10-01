@@ -22,7 +22,7 @@
 		0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EBE31A8C1FD500A8830A /* UIKit.framework */; };
 		B32EF4181BBCE80E00CDF80F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B32EF4171BBCE80E00CDF80F /* Person.m */; };
 		B32EF41B1BBCE98600CDF80F /* Co2Value.m in Sources */ = {isa = PBXBuildFile; fileRef = B32EF41A1BBCE98600CDF80F /* Co2Value.m */; };
-		B32EF41E1BBCF7F300CDF80F /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B32EF41C1BBCF7F300CDF80F /* CoreData.xcdatamodeld */; };
+		B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EF41F1BBD018800CDF80F /* CoreData.framework */; };
 		B41772C71A9566E5000EC356 /* doctor-with-ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */; };
 		B465C0CF1A9EA1B2008EEB45 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = B465C0CE1A9EA1B2008EEB45 /* Image.png */; };
 		BB0B97E51A9E48C600A41AE3 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0B97E41A9E48C600A41AE3 /* libCorePlot-CocoaTouch.a */; };
@@ -77,7 +77,7 @@
 		B32EF4171BBCE80E00CDF80F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		B32EF4191BBCE98600CDF80F /* Co2Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Co2Value.h; sourceTree = "<group>"; };
 		B32EF41A1BBCE98600CDF80F /* Co2Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Co2Value.m; sourceTree = "<group>"; };
-		B32EF41D1BBCF7F300CDF80F /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		B32EF41F1BBD018800CDF80F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "doctor-with-ipad.jpg"; sourceTree = "<group>"; };
 		B465C0CE1A9EA1B2008EEB45 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image.png; sourceTree = "<group>"; };
 		BB0B97961A9E48AE00A41AE3 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
@@ -181,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */,
 				BB0B97E91A9E499900A41AE3 /* Accelerate.framework in Frameworks */,
 				BB0B97E71A9E497C00A41AE3 /* QuartzCore.framework in Frameworks */,
 				0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */,
@@ -202,6 +203,7 @@
 		0AF9E3861A85CCF700A8830A = {
 			isa = PBXGroup;
 			children = (
+				B32EF41F1BBD018800CDF80F /* CoreData.framework */,
 				BB0B97E81A9E499900A41AE3 /* Accelerate.framework */,
 				BB0B97E61A9E497C00A41AE3 /* QuartzCore.framework */,
 				BB0B97E41A9E48C600A41AE3 /* libCorePlot-CocoaTouch.a */,
@@ -246,7 +248,6 @@
 				BB409C501BB5C73F0086483F /* LongTermGraphViewController.m */,
 				BB409C4C1BB5C5A50086483F /* PatientInformationViewController.h */,
 				BB409C4D1BB5C5A50086483F /* PatientInformationViewController.m */,
-				B32EF41C1BBCF7F300CDF80F /* CoreData.xcdatamodeld */,
 				BB409C491BB5C5390086483F /* TabBarViewController.h */,
 				BB409C4A1BB5C5390086483F /* TabBarViewController.m */,
 				0AF9E39F1A85CCF700A8830A /* Images.xcassets */,
@@ -496,7 +497,6 @@
 				0AF9EB961A8C0D7F00A8830A /* RfduinoManager.m in Sources */,
 				BB409C481BB5C1BD0086483F /* CoreData.xcdatamodeld in Sources */,
 				0AF9EB971A8C0D7F00A8830A /* ScanViewController.m in Sources */,
-				B32EF41E1BBCF7F300CDF80F /* CoreData.xcdatamodeld in Sources */,
 				0AF9EB951A8C0D7F00A8830A /* RFduino.m in Sources */,
 				B32EF41B1BBCE98600CDF80F /* Co2Value.m in Sources */,
 				BB409C541BB5C7810086483F /* DoctorInformationViewController.m in Sources */,
@@ -732,16 +732,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B32EF41C1BBCF7F300CDF80F /* CoreData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B32EF41D1BBCF7F300CDF80F /* CoreData.xcdatamodel */,
-			);
-			currentVersion = B32EF41D1BBCF7F300CDF80F /* CoreData.xcdatamodel */;
-			path = CoreData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		BB409C461BB5C1BD0086483F /* CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
