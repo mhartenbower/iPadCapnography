@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFt-u6-Swr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFt-u6-Swr">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-797" y="94"/>
         </scene>
-        <!--Item-->
+        <!--Patient Information-->
         <scene sceneID="Rw2-GP-6Kf">
             <objects>
                 <viewController id="Ga9-I7-b1S" customClass="PatientInformationViewController" sceneMemberID="viewController">
@@ -104,7 +104,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="con-UD-xoM"/>
+                    <tabBarItem key="tabBarItem" title="Patient Information" image="Caduceus-32.png" id="con-UD-xoM"/>
                     <connections>
                         <outlet property="Co2Value" destination="nJ0-Xo-BX7" id="F7A-Yd-FCa"/>
                         <outlet property="dateOfBirth" destination="303-5W-rf8" id="5xE-At-Qh5"/>
@@ -119,7 +119,7 @@
             </objects>
             <point key="canvasLocation" x="171" y="-434"/>
         </scene>
-        <!--Item-->
+        <!--Doctor Information-->
         <scene sceneID="AsK-y6-AGE">
             <objects>
                 <viewController id="2Ba-dp-a0C" customClass="DoctorInformationViewController" sceneMemberID="viewController">
@@ -133,13 +133,13 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="syo-ct-HpG"/>
+                    <tabBarItem key="tabBarItem" title="Doctor Information" image="Medical Doctor-32.png" id="syo-ct-HpG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTA-nK-ghg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-813" y="1160"/>
+            <point key="canvasLocation" x="171" y="1540"/>
         </scene>
-        <!--Item-->
+        <!--Real Time Graph-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AppViewController" sceneMemberID="viewController">
@@ -218,7 +218,7 @@
                             <constraint firstAttribute="centerX" secondItem="7Rm-Ts-ECy" secondAttribute="centerX" id="zhM-Z0-OKC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zzX-ow-KnG"/>
+                    <tabBarItem key="tabBarItem" title="Real Time Graph" image="Heart Monitor-32.png" id="zzX-ow-KnG"/>
                     <connections>
                         <outlet property="Label1" destination="rV6-gU-p5v" id="I0a-KW-TnQ"/>
                         <outlet property="Label2" destination="2VO-17-qOS" id="xV8-bf-0sY"/>
@@ -230,7 +230,7 @@
             </objects>
             <point key="canvasLocation" x="171" y="222"/>
         </scene>
-        <!--Item-->
+        <!--Long Term Graph-->
         <scene sceneID="kny-nC-fXl">
             <objects>
                 <viewController id="cly-LA-ZqD" customClass="LongTermGraphViewController" sceneMemberID="viewController">
@@ -244,11 +244,17 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="H9J-lo-aIj"/>
+                    <tabBarItem key="tabBarItem" title="Long Term Graph" image="Bar Chart-32.png" id="H9J-lo-aIj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dd0-Eh-0RJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168" y="1132"/>
+            <point key="canvasLocation" x="171" y="884"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bar Chart-32.png" width="32" height="32"/>
+        <image name="Caduceus-32.png" width="32" height="32"/>
+        <image name="Heart Monitor-32.png" width="32" height="32"/>
+        <image name="Medical Doctor-32.png" width="32" height="32"/>
+    </resources>
 </document>

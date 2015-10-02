@@ -41,6 +41,8 @@
 
 - (IBAction)saveData:(id)sender {
     
+    /*
+    
     AppDelegate *appDelegate =[[UIApplication sharedApplication] delegate];
     NSError *error;
     
@@ -78,11 +80,15 @@
     [newPerson setValue:[NSSet setWithObject:newCo2Value] forKey:@"hasA"];
     
     [newPerson.managedObjectContext save:&error];
+     
+     */
     
     
 }
 
 - (IBAction)search:(id)sender {
+    
+    /*
     AppDelegate *appDelegate =
     [[UIApplication sharedApplication] delegate];
     
@@ -136,6 +142,7 @@
                                                                   [NSString stringWithFormat:@"%f", temp])];
     }
     
+     */
     
     
 }
