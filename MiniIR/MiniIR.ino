@@ -6,7 +6,8 @@ int txPin = 5;
 int rxPin = 4;
 
 String val= "";  
-double multiplier = 5; 
+double multiplier = 100; 
+//The value for multiplier needs to be set based on the type of sensor. Value has been sent for the Sprint IR 100% Sensor
 uint8_t buffer[25]; 
 uint8_t ind =0;
 
@@ -55,14 +56,17 @@ val += buffer[i]-48;
 }
 }
 
-float co2 = (multiplier * val.toInt());  
+float co2 = ((multiplier * val.toInt()))/100;  
+//Needed to divide value by 100 according to software manual. 
 Serial.write( "Co2 = "); 
 Serial.write(co2); 
 Serial.write("ppm"); 
 ind=0;  
 val="";
 
+
+
+
 RFduinoBLE.sendFloat(co2);
 } 
-
 
