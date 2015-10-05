@@ -41,7 +41,7 @@
 
 - (IBAction)saveData:(id)sender {
     
-    /*
+    //Code to Save Values based on User and Device Input
     
     AppDelegate *appDelegate =[[UIApplication sharedApplication] delegate];
     NSError *error;
@@ -49,15 +49,22 @@
     NSManagedObjectContext *context =
     [appDelegate managedObjectContext];
     
+    
+    
     NSManagedObject *newPerson;
     newPerson = [NSEntityDescription
                  insertNewObjectForEntityForName:@"Person"
                  inManagedObjectContext:context];
     
+    //Create the custom objects NSManaged Objects that are enititys in the Data Model. Entities for CO2 value and Person.
+    
+    
     NSManagedObject *newCo2Value;
     newCo2Value = [NSEntityDescription
                    insertNewObjectForEntityForName:@"Co2Value"
                    inManagedObjectContext:context];
+    
+    //Set the values for each of these using whatever text is put into the view controller.
     
     [newPerson setValue: _firstName.text forKey:@"firstName"];
     [newPerson setValue: _lastName.text forKey:@"lastName"];
@@ -81,22 +88,19 @@
     
     [newPerson.managedObjectContext save:&error];
      
-     */
+    
     
     
 }
 
 - (IBAction)search:(id)sender {
     
-    /*
+    
     AppDelegate *appDelegate =
     [[UIApplication sharedApplication] delegate];
     
     NSManagedObjectContext *context =
     [appDelegate managedObjectContext];
-    
-    
-    // NSManagedObjectContext* context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]). managedObjectContext;
     
     
     NSEntityDescription *entityDesc =
@@ -142,7 +146,7 @@
                                                                   [NSString stringWithFormat:@"%f", temp])];
     }
     
-     */
+    
     
     
 }

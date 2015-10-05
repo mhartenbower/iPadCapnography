@@ -13,11 +13,22 @@
 @class Co2Value;
 @interface Person : NSManagedObject
 
+//Generic class that implements all the basic behavior required of core data model object.
+
+//Create 
+
 @property (nonatomic, retain) NSString * dateOfBirth;
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) NSString * medicalID;
 @property (nonatomic, retain) NSSet *hasA;
+
+
+
+//Provide MetaData about the object such as the name of the entity that it represents, and its attributed and relationships.
+
+
+
 @end
 
 @interface Person (CoreDataGeneratedAccessors)
