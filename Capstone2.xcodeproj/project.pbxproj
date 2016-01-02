@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6E67081BBF290700F20CF2 /* Heart Monitor-50-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E67071BBF290700F20CF2 /* Heart Monitor-50-2.png */; settings = {ASSET_TAGS = (); }; };
+		0A6E670A1BBF299800F20CF2 /* Heart Monitor-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E67091BBF299800F20CF2 /* Heart Monitor-32.png */; settings = {ASSET_TAGS = (); }; };
+		0A6E670C1BBF2ABC00F20CF2 /* Caduceus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E670B1BBF2ABC00F20CF2 /* Caduceus-32.png */; settings = {ASSET_TAGS = (); }; };
+		0A6E670E1BBF2C4F00F20CF2 /* Bar Chart-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E670D1BBF2C4F00F20CF2 /* Bar Chart-32.png */; settings = {ASSET_TAGS = (); }; };
+		0A6E67101BBF2CF800F20CF2 /* Medical Doctor-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E670F1BBF2CF800F20CF2 /* Medical Doctor-32.png */; settings = {ASSET_TAGS = (); }; };
 		0AF9E3951A85CCF700A8830A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9E3941A85CCF700A8830A /* main.m */; };
 		0AF9E39E1A85CCF700A8830A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF9E39C1A85CCF700A8830A /* Main.storyboard */; };
 		0AF9E3A01A85CCF700A8830A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF9E39F1A85CCF700A8830A /* Images.xcassets */; };
@@ -20,6 +25,9 @@
 		0AF9EB9A1A8C102B00A8830A /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9EB991A8C102B00A8830A /* AppViewController.m */; };
 		0AF9EB9C1A8C130F00A8830A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */; };
 		0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EBE31A8C1FD500A8830A /* UIKit.framework */; };
+		B32EF4181BBCE80E00CDF80F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B32EF4171BBCE80E00CDF80F /* Person.m */; };
+		B32EF41B1BBCE98600CDF80F /* Co2Value.m in Sources */ = {isa = PBXBuildFile; fileRef = B32EF41A1BBCE98600CDF80F /* Co2Value.m */; };
+		B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EF41F1BBD018800CDF80F /* CoreData.framework */; };
 		B41772C71A9566E5000EC356 /* doctor-with-ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */; };
 		B465C0CF1A9EA1B2008EEB45 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = B465C0CE1A9EA1B2008EEB45 /* Image.png */; };
 		BB0B97E51A9E48C600A41AE3 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0B97E41A9E48C600A41AE3 /* libCorePlot-CocoaTouch.a */; };
@@ -45,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A6E67071BBF290700F20CF2 /* Heart Monitor-50-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heart Monitor-50-2.png"; sourceTree = "<group>"; };
+		0A6E67091BBF299800F20CF2 /* Heart Monitor-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heart Monitor-32.png"; sourceTree = "<group>"; };
+		0A6E670B1BBF2ABC00F20CF2 /* Caduceus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus-32.png"; sourceTree = "<group>"; };
+		0A6E670D1BBF2C4F00F20CF2 /* Bar Chart-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bar Chart-32.png"; sourceTree = "<group>"; };
+		0A6E670F1BBF2CF800F20CF2 /* Medical Doctor-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medical Doctor-32.png"; sourceTree = "<group>"; };
 		0AF9E38F1A85CCF700A8830A /* Capstone2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF9E3931A85CCF700A8830A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF9E3941A85CCF700A8830A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,6 +83,11 @@
 		0AF9EB991A8C102B00A8830A /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
 		0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		0AF9EBE31A8C1FD500A8830A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B32EF4161BBCE80E00CDF80F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B32EF4171BBCE80E00CDF80F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B32EF4191BBCE98600CDF80F /* Co2Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Co2Value.h; sourceTree = "<group>"; };
+		B32EF41A1BBCE98600CDF80F /* Co2Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Co2Value.m; sourceTree = "<group>"; };
+		B32EF41F1BBD018800CDF80F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "doctor-with-ipad.jpg"; sourceTree = "<group>"; };
 		B465C0CE1A9EA1B2008EEB45 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image.png; sourceTree = "<group>"; };
 		BB0B97961A9E48AE00A41AE3 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
@@ -173,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */,
 				BB0B97E91A9E499900A41AE3 /* Accelerate.framework in Frameworks */,
 				BB0B97E71A9E497C00A41AE3 /* QuartzCore.framework in Frameworks */,
 				0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */,
@@ -191,9 +210,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6E67061BBF28D800F20CF2 /* Image Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Image Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		0AF9E3861A85CCF700A8830A = {
 			isa = PBXGroup;
 			children = (
+				B32EF41F1BBD018800CDF80F /* CoreData.framework */,
 				BB0B97E81A9E499900A41AE3 /* Accelerate.framework */,
 				BB0B97E61A9E497C00A41AE3 /* QuartzCore.framework */,
 				BB0B97E41A9E48C600A41AE3 /* libCorePlot-CocoaTouch.a */,
@@ -204,8 +232,13 @@
 				0AF9E3911A85CCF700A8830A /* Capstone2 */,
 				0AF9E3AB1A85CCF700A8830A /* Capstone2Tests */,
 				0AF9E3901A85CCF700A8830A /* Products */,
+				0A6E670F1BBF2CF800F20CF2 /* Medical Doctor-32.png */,
+				0A6E670B1BBF2ABC00F20CF2 /* Caduceus-32.png */,
+				0A6E670D1BBF2C4F00F20CF2 /* Bar Chart-32.png */,
 				B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */,
+				0A6E67091BBF299800F20CF2 /* Heart Monitor-32.png */,
 				B465C0CE1A9EA1B2008EEB45 /* Image.png */,
+				0A6E67071BBF290700F20CF2 /* Heart Monitor-50-2.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +256,10 @@
 			children = (
 				0AF9EB981A8C0FE000A8830A /* AppViewController.h */,
 				0AF9EB991A8C102B00A8830A /* AppViewController.m */,
+				B32EF4161BBCE80E00CDF80F /* Person.h */,
+				B32EF4171BBCE80E00CDF80F /* Person.m */,
+				B32EF4191BBCE98600CDF80F /* Co2Value.h */,
+				B32EF41A1BBCE98600CDF80F /* Co2Value.m */,
 				BBDA8D921BB600A600D531CE /* RFduinoObject.h */,
 				BBDA8D931BB600A600D531CE /* RFduinoObject.m */,
 				BB409C431BB5BC590086483F /* AppData.h */,
@@ -237,6 +274,7 @@
 				BB409C491BB5C5390086483F /* TabBarViewController.h */,
 				BB409C4A1BB5C5390086483F /* TabBarViewController.m */,
 				0AF9E39F1A85CCF700A8830A /* Images.xcassets */,
+				0A6E67061BBF28D800F20CF2 /* Image Files */,
 				0AF9E3A11A85CCF700A8830A /* LaunchScreen.xib */,
 				BB409C461BB5C1BD0086483F /* CoreData.xcdatamodeld */,
 				0AF9E3921A85CCF700A8830A /* Supporting Files */,
@@ -457,8 +495,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF9E39E1A85CCF700A8830A /* Main.storyboard in Resources */,
+				0A6E670C1BBF2ABC00F20CF2 /* Caduceus-32.png in Resources */,
+				0A6E670A1BBF299800F20CF2 /* Heart Monitor-32.png in Resources */,
 				B465C0CF1A9EA1B2008EEB45 /* Image.png in Resources */,
+				0A6E67081BBF290700F20CF2 /* Heart Monitor-50-2.png in Resources */,
 				0AF9E3A31A85CCF700A8830A /* LaunchScreen.xib in Resources */,
+				0A6E67101BBF2CF800F20CF2 /* Medical Doctor-32.png in Resources */,
+				0A6E670E1BBF2C4F00F20CF2 /* Bar Chart-32.png in Resources */,
 				B41772C71A9566E5000EC356 /* doctor-with-ipad.jpg in Resources */,
 				0AF9E3A01A85CCF700A8830A /* Images.xcassets in Resources */,
 			);
@@ -484,12 +527,14 @@
 				BB409C481BB5C1BD0086483F /* CoreData.xcdatamodeld in Sources */,
 				0AF9EB971A8C0D7F00A8830A /* ScanViewController.m in Sources */,
 				0AF9EB951A8C0D7F00A8830A /* RFduino.m in Sources */,
+				B32EF41B1BBCE98600CDF80F /* Co2Value.m in Sources */,
 				BB409C541BB5C7810086483F /* DoctorInformationViewController.m in Sources */,
 				0AF9EB9A1A8C102B00A8830A /* AppViewController.m in Sources */,
 				BBDA8D941BB600A600D531CE /* RFduinoObject.m in Sources */,
 				0AF9EB941A8C0D7F00A8830A /* CustomCellBackground.m in Sources */,
 				0AF9E3951A85CCF700A8830A /* main.m in Sources */,
 				BB409C511BB5C73F0086483F /* LongTermGraphViewController.m in Sources */,
+				B32EF4181BBCE80E00CDF80F /* Person.m in Sources */,
 				BB409C451BB5BC590086483F /* AppData.m in Sources */,
 				BB409C4E1BB5C5A50086483F /* PatientInformationViewController.m in Sources */,
 			);
@@ -617,6 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Capstone2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -636,6 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Capstone2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *Label2;
 @property (weak, nonatomic) IBOutlet CPTGraphHostingView *graphView1;
 @property (weak, nonatomic) IBOutlet CPTGraphHostingView *graphView2;
+@property(strong, nonatomic) NSMutableArray *co2ValueArray;
 @property(nonatomic, assign) BOOL hasRun;
 @property(nonatomic, strong) RFduino *rfduino;
 

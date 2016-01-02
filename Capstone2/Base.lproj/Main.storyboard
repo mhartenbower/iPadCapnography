@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFt-u6-Swr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFt-u6-Swr">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -13,6 +14,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UZ5-7r-2cg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -26,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-797" y="94"/>
         </scene>
-        <!--Item-->
+        <!--Patient Information-->
         <scene sceneID="Rw2-GP-6Kf">
             <objects>
                 <viewController id="Ga9-I7-b1S" customClass="PatientInformationViewController" sceneMemberID="viewController">
@@ -37,15 +39,87 @@
                     <view key="view" contentMode="scaleToFill" id="tVR-4Z-Tdg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9r-Ki-ZdY">
+                                <rect key="frame" x="126" y="28" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="first name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDJ-Hp-EJN">
+                                <rect key="frame" x="126" y="66" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="last name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AgI-Ax-1fp">
+                                <rect key="frame" x="126" y="117" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="date of birth" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="303-5W-rf8">
+                                <rect key="frame" x="126" y="170" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="medicalID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6hU-nH-q1p">
+                                <rect key="frame" x="126" y="217" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="search first name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YKP-Vd-Gm3">
+                                <rect key="frame" x="126" y="307" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-Mw-daV">
+                                <rect key="frame" x="126" y="262" width="150" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Save Data"/>
+                                <connections>
+                                    <action selector="saveData:" destination="Ga9-I7-b1S" eventType="touchUpInside" id="Pd0-zZ-rzE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naT-Vf-A3Z">
+                                <rect key="frame" x="177" y="356" width="48" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="search:" destination="Ga9-I7-b1S" eventType="touchUpInside" id="4CF-SB-1T2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-Xo-BX7">
+                                <rect key="frame" x="177" y="405" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="con-UD-xoM"/>
+                    <tabBarItem key="tabBarItem" title="Patient Information" image="Caduceus-32.png" id="con-UD-xoM"/>
+                    <connections>
+                        <outlet property="Co2Value" destination="nJ0-Xo-BX7" id="F7A-Yd-FCa"/>
+                        <outlet property="dateOfBirth" destination="303-5W-rf8" id="5xE-At-Qh5"/>
+                        <outlet property="firstName" destination="aDJ-Hp-EJN" id="jNR-A2-eu0"/>
+                        <outlet property="lastName" destination="AgI-Ax-1fp" id="75R-YS-SX2"/>
+                        <outlet property="medicalID" destination="6hU-nH-q1p" id="iIS-EM-giO"/>
+                        <outlet property="searchFirstName" destination="YKP-Vd-Gm3" id="KUw-gZ-Ff1"/>
+                        <outlet property="status" destination="R9r-Ki-ZdY" id="mGg-2L-ry3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vr6-jY-g9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="171" y="-434"/>
         </scene>
-        <!--Item-->
+        <!--Doctor Information-->
         <scene sceneID="AsK-y6-AGE">
             <objects>
                 <viewController id="2Ba-dp-a0C" customClass="DoctorInformationViewController" sceneMemberID="viewController">
@@ -56,15 +130,16 @@
                     <view key="view" contentMode="scaleToFill" id="BFo-nX-XQE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="syo-ct-HpG"/>
+                    <tabBarItem key="tabBarItem" title="Doctor Information" image="Medical Doctor-32.png" id="syo-ct-HpG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTA-nK-ghg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-813" y="1160"/>
+            <point key="canvasLocation" x="171" y="1540"/>
         </scene>
-        <!--Item-->
+        <!--Real Time Graph-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AppViewController" sceneMemberID="viewController">
@@ -78,43 +153,51 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Endotracheal Tube Monitoring Application" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rm-Ts-ECy">
                                 <rect key="frame" x="132" y="20" width="326" height="35"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=" C02 Concentration (PPM)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmb-BR-1xC">
                                 <rect key="frame" x="24" y="69" width="234" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV6-gU-p5v">
                                 <rect key="frame" x="336" y="66" width="107" height="26"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VO-17-qOS">
                                 <rect key="frame" x="336" y="127" width="68" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CO2 Concentration (mmHg)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0y0-YS-7jw">
                                 <rect key="frame" x="24" y="127" width="214" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-FX-cRp" customClass="CPTGraphHostingView">
                                 <rect key="frame" x="27" y="174" width="525" height="172"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PA6-v0-aD4" customClass="CPTGraphHostingView">
                                 <rect key="frame" x="27" y="376" width="528" height="192"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dGt-FX-cRp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="84k-jF-Tly"/>
@@ -135,7 +218,7 @@
                             <constraint firstAttribute="centerX" secondItem="7Rm-Ts-ECy" secondAttribute="centerX" id="zhM-Z0-OKC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zzX-ow-KnG"/>
+                    <tabBarItem key="tabBarItem" title="Real Time Graph" image="Heart Monitor-32.png" id="zzX-ow-KnG"/>
                     <connections>
                         <outlet property="Label1" destination="rV6-gU-p5v" id="I0a-KW-TnQ"/>
                         <outlet property="Label2" destination="2VO-17-qOS" id="xV8-bf-0sY"/>
@@ -147,7 +230,7 @@
             </objects>
             <point key="canvasLocation" x="171" y="222"/>
         </scene>
-        <!--Item-->
+        <!--Long Term Graph-->
         <scene sceneID="kny-nC-fXl">
             <objects>
                 <viewController id="cly-LA-ZqD" customClass="LongTermGraphViewController" sceneMemberID="viewController">
@@ -158,13 +241,20 @@
                     <view key="view" contentMode="scaleToFill" id="Z4o-q2-SQC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="H9J-lo-aIj"/>
+                    <tabBarItem key="tabBarItem" title="Long Term Graph" image="Bar Chart-32.png" id="H9J-lo-aIj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dd0-Eh-0RJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168" y="1132"/>
+            <point key="canvasLocation" x="171" y="884"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bar Chart-32.png" width="32" height="32"/>
+        <image name="Caduceus-32.png" width="32" height="32"/>
+        <image name="Heart Monitor-32.png" width="32" height="32"/>
+        <image name="Medical Doctor-32.png" width="32" height="32"/>
+    </resources>
 </document>

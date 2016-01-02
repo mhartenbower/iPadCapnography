@@ -30,8 +30,23 @@
     AppDelegate *appDelegate =[[UIApplication sharedApplication] delegate];
     NSError *error;
 
+    //Bug Fix John Not sure if Correct
+    
+    
+    
     NSManagedObjectContext *context =
     [appDelegate managedObjectContext];
+     
+    
+    
+    //The following line of code is the bugfix. Tell me if its correct.
+    
+   // NSManagedObjectContext* context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]). managedObjectContext;
+    
+    //Added Code ends here
+    
+    //Got this code from here:http://stackoverflow.com/questions/16186838/cant-connect-my-managedobjectcontext-from-my-view-to-my-delegate
+    
     
     NSManagedObject *newPerson;
     newPerson = [NSEntityDescription
